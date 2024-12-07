@@ -16,7 +16,7 @@ int main(){ _
 
     for(int i=0;i<=n;i++){
         for(int face=1;face<=6;face++){
-            if(i-face>-0){
+            if(i-face>=0){
                 poss[i]=(poss[i]+poss[i-face]) % MOD;
             }
         }
